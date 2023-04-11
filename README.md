@@ -1,2 +1,2 @@
-# cathy-colette-tanya-portfolio
+# Cathy-Colette Tanya Portfolio
 Formal portfolio 
