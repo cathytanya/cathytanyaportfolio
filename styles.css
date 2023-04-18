@@ -289,7 +289,48 @@ section{
     line-height: 2;
 }
 
-
+/* Portfolio page */
+.portfolio{
+    text-align: center;
+}
+.portfolio .box-container{
+    padding: 0%;
+}
+.portfolio .box-container .box{
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio .box-container .box .content{
+    position: absolute;
+    top:0; 
+    left:0;
+    height: 100%;
+    width:100%;
+    background: var(--lightpurple);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+}
+.portfolio .box-container .box .content h3{
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.portfolio .box-container .box .content p{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--yellow);
+    line-height: 2;
+}
+.portfolio .box-container .box .content a{
+    padding: 2rem;
+    color: var(--blush);
+    font-size: 2rem;
+}
 @media(max-width:1200px){
     html{
         font-size: 55%;
