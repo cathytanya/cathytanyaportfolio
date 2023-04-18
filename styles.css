@@ -64,12 +64,52 @@ body{
     color: white;
 }
 
+section{
+    padding: 5rem 9%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: calc(100vh);
+}
+.home .image{
+    flex: 1 1 42rem;
+}
+.home .image img{
+    height:60rem;
+    width:50rem;
+    border-radius: 70% ;
+}
+.home .content{
+    flex: 1 1 42rem;
+}
+.home .content h3{
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+.home .content span{
+    color: var(--blush);
+    font-size: 3rem;
+    padding: 1rem 0;
+    display: block;
+}
+.home .content p{
+    color: var(--lightpurple);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
 
 
 
 @media(max-width:1200px){
     html{
         font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
     }
 }
 
