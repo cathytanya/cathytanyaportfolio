@@ -51,7 +51,7 @@ body{
     font-size: 2rem;
     background: var(--mediumpurple);
     flex: 1;
-    color: white;
+    color: var(--yellow);
 }
 .navbar i{
     color: var(--blush);
@@ -67,7 +67,30 @@ body{
 section{
     padding: 5rem 9%;
 }
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 6rem;
+    background: var(--blush);
+    padding: 1rem;
+    font-size: 2rem;
+    /* color: white; */
+    color: var(--yellow);
 
+}
+.btn i{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    /* background: var(--yellow); */
+    background: white;
+    border-radius: 50%;
+}
+.btn:hover i{
+    margin-left: 1.5rem;
+}
 .home{
     display: flex;
     align-items: center;
@@ -123,6 +146,20 @@ section{
     .navbar a:hover {
         padding-bottom: 2rem;
     }
+    .home{
+        text-align: center;
+    }
+    .home .image img{
+        height: 50rem;
+        width: 40rem;
+    }
+    .home .content h3{
+        font-size: 3rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
 }
 @media(max-width:450px){
     html{
