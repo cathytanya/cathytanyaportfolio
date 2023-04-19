@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cathy-Colette Portfolio</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("AyyS3ANK6Xz29kNXG");
+        })();
+    </script>    
 </head>
 <body>
     <nav class="navbar">
@@ -20,7 +29,7 @@
         <h1 class="heading">contact <span> me </span></h1>
         <div class="row">
             <div class="info-container">
-                <h1>how to contact me?</h1>
+                <h1>how to contact me</h1>
                 <div class="box-container">
                     <div class="box">
                         <i class="fas fa-envelope"></i>
@@ -28,30 +37,45 @@
                             <h3>e-mail: </h3>
                             <p>cathycolette.tanya@gmail.com</p>
                         </div>
-                        <div class="share">
-                            <a href="https://www.facebook.com/cathy.tanya.9/" class="fa-brands fa-facebook"></a>
-                            <a href="https://www.instagram.com/cathie.tanya/" class="fa-brands fa-instagram"></a>
-                            <a href="https://www.linkedin.com/in/cathy-colette-tanya-32b10b217/" class="fa-brands fa-linkedin"></a>
-                            <a href="https://github.com/cathytanya" class="fa-brands fa-github"></a>
-                        </div>
-                        <form action="">
-                            <div class="inputBox">
-                                <input type="text" placeholder="Name">
-                                <input type="number" placeholder="Phone Number">
-                            </div>
-                            <div class="inputBox">
-                                <input type="email" placeholder="e-mail">
-                                <input type="text" placeholder="subject">
-                            </div>
-                            <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
-                            <input type="submit" value="send" class="btn">
-
-                        </form>
                     </div>
                 </div>
+                <div class="share">
+                    <a href="https://www.facebook.com/cathy.tanya.9/" class="fa-brands fa-facebook"></a>
+                    <a href="https://www.instagram.com/cathie.tanya/" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/cathy-colette-tanya-32b10b217/" class="fa-brands fa-linkedin"></a>
+                    <a href="https://github.com/cathytanya" class="fa-brands fa-github"></a>
+                </div>
+            </div>
+
+            <div>
+                <h1 style="color: white; font-size: 4rem;">Contact form</h1>
+                <div class="form-group">
+                  <h5 style="color: #f8c630; font-size: 2rem;" for="name">Name</h5>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <br>
+                <div class="form-group">
+                  <h5 style="color: #f8c630; font-size: 2rem;" for="email">Email</h5>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="E-Mail"
+                  />
+                </div>
+                <br>
+                <div class="form-group">
+                  <h5 style="color: #f8c630; font-size: 2rem;" for="message">Message</h5>
+                  <textarea id="message" placeholder="Message" rows="3"></textarea>
+                </div>
+                <button onclick="SendMail()">Submit</button>
             </div>
         </div>
-
     </section>
 
 
